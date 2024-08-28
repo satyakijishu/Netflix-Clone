@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.container::before{
+    content: "";
+    background: url(image/background.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 118%;
+    width: 100%;
+    opacity: 0.3;
+    z-index: -1;
+}
+.container .navbar{
+    height: 100px;
+    display: flex;
+}
+.container .navbar .left{
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.container .navbar .left img {
+    height: 60px;
+    position: absolute;
+    left: 50px;
+    width: 250px;
+    top: 25px;
+    
+    
+}
+
+.container .navbar .right{
+    display: flex;
+    height: 100px;
+    float: right;
+    position: absolute;
+    right: 50px;
+  
+}
+.container .navbar .right .language{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.container .navbar .right .language:hover{
+    background: white;
+    color: black;
+}
+.container .navbar .right .language option{
+    background-color: grey;
+}
+.container .navbar .right button{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+}
+.container .navbar .right button a{
+    text-decoration: none;
+    color: white;
+}
+.container .navbar .right button:hover{
+    background: #620509;
+}
+.container .title{
+    padding: 70px 45px;
+}
+.container .title .content{
+    width: 950px;
+    margin: auto;
+    padding: 75px 0;
+    text-align: center;
+}
+.container .title .content h1{
+        width: 1050px;
+        margin: auto;
+        font-size: 3.5rem;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+.container .title .content h2{
+    width: 650px;
+    margin: auto;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container .title .content form h3{
+   
+    font-size: 1rem;
+    margin: 18px 0;
+    text-align: center;
+    padding-left: 40px;
+   
+}
+.container .title .content form .email{
+    width: 1000px;
+    margin: auto;
+    padding-right: 170px;
+}
+.container .title .content form .email input{
+    height: 60px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    color: black;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 3px;
+    border-color:white;
+}
+.container .title .content form .email button{
+    margin: auto;
+    height: 60px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background:  #f40612;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    margin-left: 5px;
+    border-radius: 4px;
+
+
+}
+.container .title .content form .email button:hover{
+    background-color:#c30912;
+}
+.container .title .content form .email button a{
+    text-decoration: none;
+    color: white;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 200px;
+    padding: 66px;
+    border-top: 5px solid gray;
+    height: 55vh;
+    /* padding-left: 250px;
+    padding-top: 150px; */
+    
+}
+/* .firstpic{
+    width: 200%;
+    height: 50vh;
+    /* border: 2px solid white; */
+    /* justify-content: center;
+    margin: auto; */
+    /* padding-left: 250px ; */
+
+.first h1{
+    font-size: 55px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.first img{
+    width: 60%;
+}
+.buttons h1{
+text-align:center;
+margin-top: 33px;
+font-size: 44px;
+padding-bottom: 20px;
+padding-top: 15px;
+border-top: 4px solid gray;
+}
+.buttons button{
+    width: 600px;
+    height:60px;
+    background-color: rgb(55, 55, 55);
+    border-bottom: 6px solid black;
+    color: white;
+    font-size: 25px;
+    margin-left:30.3%;
+    
+}
+.buttons button:hover{
+    background-color: rgb(54, 51, 51);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 44px;
+    border-top: 6px solid rgb(55, 54, 54);
+    margin-top: 33px;
+}
+.first.text{
+    align-items: left;
+    justify-content:center;
+    
+}
+ .title .content form h3{
+   
+    font-size: 1rem;
+    margin: 18px 0;
+    text-align: center;
+   
+}
+.title .content form .email {
+    width: 1000px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 180px;
+  
+}
+
+ .title .content form .email input{
+    height: 60px;
+    width: 450px;
+    margin: auto;
+    padding: 20px;
+    font-size: 20px;
+    outline: none;
+    color: black;
+    background-color: rgba(0, 0,0,0.7);
+    border-radius: 3px;
+    border-color: white;
+}
+ .title .content form .email button{
+    margin: auto;
+    height: 60px;
+    width: 180px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 7px 17px;
+    background:  #f40612;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border: none;
+    margin-left: 5px;
+}
+ .title .content form .email button:hover{
+    background-color:#c30912;
+}
+ .title .content form .email button a{
+    text-decoration: none;
+    color: white;}
+
+     button {
+        border: none;
+        background: transparent;
+        padding: 0;
+      }
+
+      button img {
+        width: 100px; /* Adjust as needed */
+        padding: 10px; /* Optional spacing */
+      }
+      
